@@ -15,11 +15,12 @@ const UploadForm = () => {
 
     if (selected && types.includes(selected.type)) {
       setFile(selected);
+      setError('');
     }else {
       setFile(null);
       setError('Please select an image file (png on jpeg');
     }
-  }
+  };
 
   return (
     <form>
@@ -32,10 +33,9 @@ const UploadForm = () => {
         { error && <div className="error"> { error }</div> }
         { file && <div>{ file.name }</div> }
         { file && <ProgressBar file={file} setFile={setFile}/> }
-
         </div>
     </form>
-  )
+  );
 }
 
 export default UploadForm;

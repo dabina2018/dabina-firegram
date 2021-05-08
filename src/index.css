@@ -30,7 +30,15 @@ body{
 }
 
 /* upload form styles */
-
+form{
+  margin: 30px auto 10px;
+  text-align: center;
+}
+label input{
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
 /*jfkda;jfkldsajfdls*/
 label{
   display: block;
@@ -68,7 +76,7 @@ label:hover{
   margin: 20px auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap:40px;
+  grid-gap: 40px;
 }
 .img-wrp{
   overflow: hidden;
@@ -81,10 +89,10 @@ label:hover{
 .img-wrap img{
   min-width: 100%;
   min-height: 100%;
-  max-width: 150%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  max-width: 25%;
+  position: relative;
+  top: 50;
+  left: 50;
 }
 
 /* modal styles */
